@@ -4,3 +4,14 @@
     text-align: center;
     margin-top: 17%;
 }
+
+.ini {
+    max-width: 60%;
+    max-height: 60%;
+    border-radius: 50px;
+    display: block;
+    margin: auto;
+    justify-content: center;
+
+}
+

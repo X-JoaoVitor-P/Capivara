@@ -3,7 +3,7 @@ body {
     height: 100vh;
     background-color: rgb(231, 162, 121);
     padding: 0;
-    margin: 0;
+    margin: 10%;
 }
 
 
@@ -36,6 +36,10 @@ ul li a {
 section {
           background-color: rgb(210, 145, 99);  
           border-radius: 8px;
+          justify-content: center;
+          display: block;
+          margin: auto;
+          width: 50%;
         }
 
 ul li a:hover {
