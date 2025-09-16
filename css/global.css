@@ -11,7 +11,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 40px;
+    padding: 1px 40px;
 }
 
 
@@ -34,15 +34,22 @@ ul li a {
 }
 
 section {
-          background-color: rgb(210, 145, 99);  
-          border-style: solid;
-          border-color: rgb(243, 194, 160);
-          border-radius: 8px;
-          justify-content: center;
-          display: block;
-          margin: auto;
-          width: 50%;
+    transition: all 0.3s ease;
+        background-color: rgb(210, 145, 99);  
+        border-style: solid;
+        border-color: rgb(243, 194, 160);
+        border-radius: 8px;
+        justify-content: center;
+        transition: all 0.3s ease;
+        display: block;
+        margin: auto;
+        width: 50%;
         }
+
+section:hover {
+    background-color: rgb(255, 234, 0);
+
+}
 
 ul li a:hover {
     color: chocolate;
@@ -58,6 +65,11 @@ ul li a:hover {
     max-height: 500px;
     width: 500px;
     height: 300px;
+}
+
+.capy:hover {
+    width: 550px;
+    height: 330px;
 }
 
 .image-text-container {
