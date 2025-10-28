@@ -1,11 +1,60 @@
+:root {
+    --base-color: rgb(231, 162, 121);
+    --base-variant: #e8e9ed;
+    --text-color: #050404;
+    --secondary-text: #232738;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+}
+
+.darkmode {
+    --base-color: rgb(121, 84, 63);
+    --base-variant: #000000;
+    --text-color: #ffffff;
+    --secondary-text: #8e94b1;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+}
+
+
 body {
     font-family: "Lobster Two", sans-serif;
     height: 100vh;
-    background-color: rgb(231, 162, 121);
+    background-color: var(--base-color);
+    color: var(--text-color);
     padding: 0;
     margin: 10%;
 }
 
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#theme-switch svg {
+    fill: var(--primary-color);
+}
+
+#theme-switch svg:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child{
+    display: block;
+}
 
 nav {
     display: flex;
@@ -35,16 +84,16 @@ ul li a {
 
 section {
     transition: all 0.3s ease;
-        background-color: rgb(210, 145, 99);  
-        border-style: solid;
-        border-color: rgb(243, 194, 160);
-        border-radius: 8px;
-        justify-content: center;
-        transition: all 0.3s ease;
-        display: block;
-        margin: auto;
-        width: 50%;
-        }
+    background-color: rgb(210, 145, 99);
+    border-style: solid;
+    border-color: rgb(243, 194, 160);
+    border-radius: 8px;
+    justify-content: center;
+    transition: all 0.3s ease;
+    display: block;
+    margin: auto;
+    width: 50%;
+}
 
 section:hover {
     background-color: rgb(255, 234, 0);
@@ -54,7 +103,7 @@ section:hover {
 ul li a:hover {
     color: chocolate;
     font-size: 1.2em;
-    
+
 }
 
 .capy {
@@ -84,45 +133,52 @@ header {
     border-radius: 50px;
     background-color: rgb(167, 101, 54);
     height: 10%;
-    
+
 }
 
 .lobster-two-regular {
-  font-family: "Lobster Two", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .lobster-two-bold {
-  font-family: "Lobster Two", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .lobster-two-regular-italic {
-  font-family: "Lobster Two", sans-serif;
-  font-weight: 400;
-  font-style: italic;
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .lobster-two-bold-italic {
-  font-family: "Lobster Two", sans-serif;
-  font-weight: 700;
-  font-style: italic;
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
 
 footer {
-        background-color: rgb(167, 101, 54); /* Cor de fundo escura */
-        color: rgb(243, 194, 160); /* Cor do texto branca */
-        padding: 15px; /* Espaçamento interno */
-        text-align: center; /* Centraliza o texto */
-        width: 100%; /* Faz a barra ocupar a largura total */
-        box-sizing: border-box; /* Inclui o padding e a borda na largura total */
-    }
+    background-color: rgb(167, 101, 54);
+    /* Cor de fundo escura */
+    color: rgb(243, 194, 160);
+    /* Cor do texto branca */
+    padding: 15px;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Centraliza o texto */
+    width: 100%;
+    /* Faz a barra ocupar a largura total */
+    box-sizing: border-box;
+    /* Inclui o padding e a borda na largura total */
+}
 
-    .copy_capy p {
-        margin: 0; /* Remove a margem padrão do parágrafo */
-        font-size: 0.9em; /* Tamanho da fonte um pouco menor */
-    }
-
+.copy_capy p {
+    margin: 0;
+    /* Remove a margem padrão do parágrafo */
+    font-size: 0.9em;
+    /* Tamanho da fonte um pouco menor */
+}
